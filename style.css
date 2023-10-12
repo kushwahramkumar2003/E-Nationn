@@ -1,6 +1,9 @@
+/**************** index.html  *******************/
+
 /* Set the font for the entire page to "Poppins" */
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 /* Define a border style with rounded corners */
@@ -458,6 +461,7 @@ body {
   line-height: normal;
   text-transform: capitalize;
 }
+
 .section2_5 {
   display: flex;
   flex-direction: row;
@@ -476,13 +480,17 @@ body {
 
   border-radius: 0.90388rem;
   background: #f8f8f8;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 #planeCard {
-  margin-left: 8.25rem;
+  /* margin-left: 8.25rem; */
 }
 #section2_5_p1 {
   color: #37dab2;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-size: 2rem;
   font-style: normal;
   font-weight: 600;
@@ -501,28 +509,31 @@ body {
   width: 5.11869rem;
 
   color: #737373;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-size: 1.15288rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  text-decoration-line: strikethrough;
+  text-decoration-line: "strikethrough";
 }
 #planeCard > span {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 #planeBenifits {
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   margin-bottom: 1.35rem;
 }
 #planeBenifits img {
-  margin-right: 0.35rem;
+  margin-right: 1.35rem;
 }
 #planeBenifits > p {
   color: #737373;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 1.23819rem;
   font-style: normal;
   font-weight: 500;
@@ -557,7 +568,36 @@ body {
   font-weight: 600;
   line-height: normal;
   margin-top: 2.13rem;
+  padding: 0;
 }
+
+#discount1,
+#discount2 {
+  width: 12.25rem;
+  height: 3.6875rem;
+  flex-shrink: 0;
+
+  border-radius: 1.125rem;
+  background-color: #ebebeb;
+
+  padding: 0.19rem 1.75rem 0.19rem 1.75rem;
+  position: absolute;
+}
+#discount1 > p,
+#discount2 > p {
+  color: #4e69d8;
+  font-family: "Poppins";
+  font-size: 2.1875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#discount1,
+#discount2 {
+  margin-top: -1.87rem;
+  margin-left: 13.87rem;
+}
+
 /***************** section 3 ******************/
 
 .section3 {
@@ -893,3 +933,151 @@ body {
 #emailInput > img {
   object-fit: cover;
 }
+
+/******************** Contact.html  *****************/
+
+/****************** left Section  ********************/
+.contactSection {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 9.38rem;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+#contactLeftSec {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  margin-bottom: 9.56rem;
+}
+#contactLeftSec > h2 {
+  width: 23.4375rem;
+
+  color: #072049;
+  font-family: "Poppins";
+  font-size: 3.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.1625rem;
+  text-transform: capitalize;
+}
+
+#contactLeftSec > p {
+  width: 21.875rem;
+  height: 6.5rem;
+  flex-shrink: 0;
+
+  color: #000;
+  font-family: "Poppins";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+
+  margin-bottom: 5.31rem;
+}
+
+#contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+#email,
+#phone,
+#location {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+#email > img,
+#phone > img,
+#location > img {
+  margin-right: 1.75rem;
+}
+
+/************************ right section  **********************/
+
+.contactSection > #contactRightSec {
+  width: 30.1875rem;
+  height: 36.8125rem;
+  flex-shrink: 0;
+
+  border-radius: 1.125rem;
+  background: #f9f9f9;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.3);
+
+  padding: 2.87rem;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: start;
+  align-items: center;
+
+  /* margin-bottom: 9.56rem; */
+  /* margin-top: 1.66rem; */
+  margin-left: 45rem;
+
+  position: absolute;
+
+  margin-top: 4.81rem;
+}
+.contactSection > #contactRightSec > h2 {
+  width: 18.9375rem;
+
+  color: #072049;
+  font-family: "Poppins";
+  font-size: 2.1875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.02188rem;
+  text-transform: uppercase;
+
+  margin-bottom: 2.56rem;
+}
+.contactSection > #contactRightSec > #rightSectionName,
+.contactSection > #contactRightSec > #rightSectionMail {
+  width: 23.5625rem;
+  height: 4.0625rem;
+  flex-shrink: 0;
+
+  border-radius: 0.5rem;
+  border: 2px solid #072049;
+  background: rgba(217, 217, 217, 0);
+
+  margin-bottom: 1.81rem;
+}
+
+.contactSection > #contactRightSec > #rightSectionMessage {
+  width: 23.5625rem;
+  height: 8.5rem;
+  flex-shrink: 0;
+
+  border-radius: 0.5rem;
+  border: 2px solid #072049;
+  background: rgba(217, 217, 217, 0);
+
+  margin-bottom: 1.81rem;
+}
+.contactSection > #contactRightSec > button {
+  width: 19.6875rem;
+  height: 3.5625rem;
+  flex-shrink: 0;
+
+  border-radius: 2.72331rem;
+  background: #072049;
+
+  color: white;
+}
+
+
