@@ -1,0 +1,895 @@
+/* Set the font for the entire page to "Poppins" */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Define a border style with rounded corners */
+#myBorder,
+.myBorder {
+  border: 2px solid #000;
+  border-radius: 0.75rem;
+}
+#myBorder2,
+.myBorder2 {
+  border: 2px solid wheat;
+  border-radius: 0.75rem;
+}
+/* Styling for the main container */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 0ch;
+  width: 100%;
+}
+
+/* Styling for the navbar */
+#navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.81rem 5vw 0rem 5vw;
+}
+
+/* Styling for the h1 element within the navbar */
+#navBar > h1 {
+  color: #072049;
+  font-family: Eczar;
+  font-size: 2.1875rem;
+  font-weight: 700;
+}
+
+/* Styling for the navigation links within the navbar */
+#navBar > #navLinks {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 6.87rem;
+}
+
+/* Responsive styling for the navbar on smaller screens */
+@media screen and (max-width: 768px) {
+  #navBar {
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+    margin: 2rem 2vw 2rem 2vw;
+  }
+
+  #navBar > h1 {
+    justify-content: center;
+
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  #navBar > #navLinks {
+    justify-content: center;
+
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 600px) {
+  #navBar {
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    /* margin: 2rem 1vw 2rem 1vw; */
+  }
+
+  #navBar > h1 {
+    margin-bottom: 1rem;
+  }
+
+  #navBar > #navLinks {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+}
+
+/* Styling for section 1 */
+.section1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  /* margin: 5.625rem 0 5.625rem 0; */
+  margin-bottom: 12rem;
+  /* height: 75rem; */
+  height: max-content;
+  overflow: visible;
+
+  /* height: 85rem; */
+  width: max-content;
+}
+
+#rightSectionImg {
+  height: 57rem;
+  width: 57rem;
+  object-fit: contain;
+  position: relative;
+  margin-left: -7rem;
+  margin-top: 3rem;
+}
+
+/* Styling for the section 1 h1 element */
+.section1H1 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 2.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.50625rem;
+}
+
+/* kjasbdfkjb */
+.section1 > #leftSection {
+  margin-left: 5.25rem;
+  color: #000;
+  font-family: "Poppins";
+  font-size: 1.8125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.0725rem;
+
+  width: 42.6875rem;
+  margin-top: 1.69rem;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#leftSection > button {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.175rem;
+
+  border-radius: 1.125rem;
+  background: #072049;
+
+  margin-top: 3.19rem;
+  margin-left: 6.56rem;
+
+  width: 15.5625rem;
+  height: 4.0625rem;
+  flex-shrink: 0;
+}
+.section1 > .rightSection {
+  width: 41.375rem;
+  height: 41.375rem;
+  flex-shrink: 0;
+
+  /* background: url("./assets/Students Discussion Together.svg"),
+    50% / cover no-repeat; */
+
+  margin-right: 2rem;
+}
+
+.section1 #rectangle3 {
+  position: absolute;
+  width: 32.71019rem;
+  height: 29.93756rem;
+  transform: rotate(-44.571deg);
+  flex-shrink: 0;
+
+  border-radius: 0.75rem;
+  border: 1px solid #000;
+  background: rgba(217, 217, 217, 0);
+
+  margin-top: 10rem;
+  margin-right: 1.95rem;
+  margin-left: 2.5rem;
+}
+.section1 > .rightSection > img {
+  /* margin-top: 2.25rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.75rem; */
+  position: relative;
+  width: 41.375rem;
+  height: 41.375rem;
+  flex-shrink: 0;
+  margin-bottom: 6rem;
+}
+
+@media screen and (max-width: 690px) {
+  .section1 {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+  }
+  #rightSectionImg {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    width: 30.375rem;
+    height: 30.375rem;
+    flex-shrink: 0;
+    /* margin-bottom: 6rem; */
+    margin-left: 2rem;
+  }
+  .section1 > #leftSection {
+    margin-left: 5.25rem;
+    color: #000;
+    font-family: "Poppins";
+    font-size: 1.8125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.0725rem;
+
+    /* width: 42.6875rem; */
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Styling for Section 2 */
+/********************** section 2 *******************/
+
+/* Set Section 2 to display as a flex row, 100% of the viewport width */
+.section2 {
+  display: flex;
+  flex-direction: row;
+  position: none;
+  margin-right: 0;
+  width: 100vw;
+}
+
+/* Styling for the first part of Section 2 */
+#section2_1 {
+  margin-left: 5.81rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+
+/* Styling for the image within the first part of Section 2 */
+#section2_1 > #leftSection img {
+  width: 110rem;
+  object-fit: contain;
+}
+
+/* Styling for the right part of Section 2 */
+#section2_1 > #rightSection {
+  margin-left: 10rem;
+  display: flex;
+  flex-direction: column;
+  /* padding: 2rem; */
+}
+
+/* Styling for Section 2's first paragraph */
+#section2_1_p1 {
+  width: 24.6875rem;
+  height: 2.6875rem;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 0.62rem;
+}
+
+/* Styling for Section 2's second paragraph */
+#section2_1_p2 {
+  width: 24.6875rem;
+  height: 7.125rem;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Poppins;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 2.06rem;
+}
+
+/* Styling for Section 2's third paragraph */
+#section2_1_p3 {
+  /* width: 33.625rem; */
+  color: #000;
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 3.44rem;
+}
+
+/* Styling for the correct icon */
+#correctIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.95rem;
+  object-fit: cover;
+}
+
+/* Styling for benefit elements */
+#benifits {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Styling for Section 2's fourth paragraph */
+#section2_1_p4 {
+  /* width: 31.8125rem; */
+  color: #000;
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 2.25rem;
+}
+
+/* Styling for Section 2's subheading within the fourth paragraph */
+#section2_1_p4_b {
+  width: 32.5625rem;
+  color: #000;
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+/* Responsive styling for Section 2 on screens up to 1040px */
+@media screen and (max-width: 1040px) {
+  #section2_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+  }
+
+  #section2_1 > #leftSection img {
+    width: 60vw;
+    /* height: 364.5625rem; */
+  }
+
+  #section2_1 > #rightSection {
+    width: 90vw;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    /* padding: 2rem; */
+  }
+}
+
+/* More responsive styling for Section 2 on screens up to 690px */
+@media screen and (max-width: 690px) {
+  #section2_1 {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0;
+  }
+
+  #section2_1 > #leftSection img {
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #section2_1 > #rightSection {
+    width: 100vw;
+    margin: 4rem 4rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.section2_3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 6.2rem;
+  align-items: center;
+  margin-top: 5.65rem;
+  margin-left: 5.75rem;
+  margin-right: 5.75rem;
+}
+#section2_3_card {
+  width: 21.75rem;
+  height: 21.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
+
+  border-radius: 1.125rem;
+  background: rgba(242, 242, 242, 0.74);
+}
+#section2_3_card_p1 {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#section2_3_card_p2 {
+  width: 18.8125rem;
+
+  color: #000;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.section2_5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6.2rem;
+  align-items: center;
+  margin-top: 9.5rem;
+  /* margin-left: 5.75rem;
+  margin-right: 5.75rem; */
+}
+#planeCard,
+#proPlaneCard {
+  width: 23.6875rem;
+  height: 33.5625rem;
+  flex-shrink: 0;
+
+  border-radius: 0.90388rem;
+  background: #f8f8f8;
+}
+#planeCard {
+  margin-left: 8.25rem;
+}
+#section2_5_p1 {
+  color: #37dab2;
+  font-family: Poppins;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 2.13rem;
+}
+#section2_5_p2 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 1.38344rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#section2_5_p3 {
+  width: 5.11869rem;
+
+  color: #737373;
+  font-family: Poppins;
+  font-size: 1.15288rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: strikethrough;
+}
+#planeCard > span {
+  display: flex;
+  flex-direction: row;
+}
+#planeBenifits {
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 1.35rem;
+}
+#planeBenifits img {
+  margin-right: 0.35rem;
+}
+#planeBenifits > p {
+  color: #737373;
+  font-family: Poppins;
+  font-size: 1.23819rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#planeCard > button {
+  width: 14.25rem;
+  height: 3.875rem;
+  flex-shrink: 0;
+
+  border-radius: 1.125rem;
+  background: #4e69d8;
+
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin-top: 3rem;
+}
+#proPlane_p {
+  color: #f7c963;
+  font-family: "Poppins";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 2.13rem;
+}
+/***************** section 3 ******************/
+
+.section3 {
+  width: 100vw;
+  /* height: 69.8125rem; */
+  flex-shrink: 0;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+
+  margin-top: 9.13rem;
+}
+
+.section3 > h2 {
+  width: 34.375rem;
+  height: 4.66569rem;
+  flex-shrink: 0;
+
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+
+  margin-top: 11.94rem;
+}
+
+#reviewCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4.7rem;
+  align-items: center;
+  margin-top: 5.33rem;
+  max-width: 90vw;
+  margin-bottom: 7.19rem;
+}
+#reviewCard1 {
+  width: 24.625rem;
+  height: 27.0625rem;
+  flex-shrink: 0;
+
+  border-radius: 1.125rem;
+  background: #f3fde8;
+
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+#reviewCard2 {
+  width: 24.625rem;
+  height: 27.0625rem;
+  flex-shrink: 0;
+
+  border-radius: 1.125rem;
+  background: #dfccfb;
+  flex-direction: column;
+  margin-top: 5.12rem;
+  padding: 2rem;
+}
+#profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+}
+#profile > img {
+  margin-right: 1.68rem;
+}
+#profile > p {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+#profile + p {
+  width: 20.75rem;
+
+  color: #000;
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-top: 2.69rem;
+  margin-left: 0.59rem;
+}
+
+/************************ section 4 ************************/
+.section4 {
+  width: 90rem;
+  height: 364.5625rem;
+
+  background: #fff;
+
+  display: flex;
+  flex-direction: row;
+
+  margin: 3.95rem 4vw 4.81rem 4vw;
+}
+
+#section4_right {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+
+  margin-left: 8.25rem;
+  margin-top: 9.06rem;
+}
+
+#downloadLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+#section4_p1 {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.125rem;
+  text-transform: capitalize;
+  margin-bottom: 1.67rem;
+}
+#section4_p2 {
+  width: 30.6875rem;
+
+  color: #000;
+  font-family: "Poppins";
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.06875rem;
+  text-transform: capitalize;
+
+  margin-bottom: 5.44rem;
+}
+
+/********************** footer  *****************************/
+
+.footer {
+  /* width: 90rem;
+  height: 21.5625rem; */
+
+  width: 100vw;
+  flex-shrink: 0;
+
+  background: #000;
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16.88rem;
+  padding-left: 5.25rem;
+  padding-right: 3.81rem;
+  padding-top: 5.19rem;
+  padding-bottom: 1.5rem;
+}
+#company {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+
+  max-width: 15.375rem;
+}
+#footerCompany_p1 {
+  color: #fff;
+  font-family: "Eczar";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+#footerCompany_p2 {
+  width: 15.375rem;
+
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+#footerCompany_p3 {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 0.6875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.01375rem;
+  text-transform: capitalize;
+}
+#socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 2rem;
+  margin-top: 1.31rem;
+  margin-bottom: 2rem;
+}
+
+#usefulLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* gap: 0.7rem; */
+  /* justify-content: center; */
+
+  width: max-content;
+}
+#usefulLinks > h2 {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 0.81rem;
+}
+#usefulLinks > p {
+  /* width: 3.3125rem; */
+
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+
+  margin-bottom: 0.7rem;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+
+  /* justify-content: center; */
+
+  /* width: max-content; */
+}
+
+#contact > h2 {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+
+  margin-bottom: 0.7rem;
+}
+
+#contact > p {
+  /* width: 14.0625rem; */
+
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.00938rem;
+  text-transform: capitalize;
+
+  margin-bottom: 1.4rem;
+  max-width: 17.56rem;
+}
+
+#emailInput {
+  /* width: 17.5625rem; */
+  height: 3rem;
+  flex-shrink: 0;
+
+  border-radius: 1.125rem;
+  background: #fff;
+
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+  justify-content: start;
+  align-items: center;
+
+  max-width: 17.56rem;
+  padding: 0.4rem;
+}
+
+#emailInput > input {
+  all: unset;
+  width: 8.875rem;
+  height: 1.8125rem;
+  flex-shrink: 0;
+
+  color: #555;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+
+  margin-right: 5.22rem;
+
+  outline: none;
+  outline-offset: none;
+}
+
+#emailInput > img {
+  object-fit: cover;
+}
