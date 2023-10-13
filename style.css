@@ -1,5 +1,3 @@
-/**************** index.html  *******************/
-
 /* Set the font for the entire page to "Poppins" */
 body {
   font-family: "Poppins", sans-serif;
@@ -23,7 +21,12 @@ body {
   flex-direction: column;
   height: 0ch;
   width: 100%;
+
+  /* justify-content: center; */
+  align-items: center;
 }
+
+/****************** navBar  *********************/
 
 /* Styling for the navbar */
 #navBar {
@@ -31,7 +34,9 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  /* gap: 30.75rem; */
   margin: 1.81rem 5vw 0rem 5vw;
+  width: 88vw;
 }
 
 /* Styling for the h1 element within the navbar */
@@ -96,7 +101,7 @@ body {
     flex-wrap: wrap;
   }
 }
-
+/******************** index.html **********************/
 /* Styling for section 1 */
 .section1 {
   display: flex;
@@ -110,6 +115,7 @@ body {
   overflow: visible;
 
   /* height: 85rem; */
+  /* width: 85rem; */
   width: max-content;
 }
 
@@ -533,7 +539,7 @@ body {
 }
 #planeBenifits > p {
   color: #737373;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 1.23819rem;
   font-style: normal;
   font-weight: 500;
@@ -1080,4 +1086,489 @@ body {
   color: white;
 }
 
+/*************** aboutUs.html  *****************/
 
+/************** section 1 *****************/
+
+.aboutUsSection1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 9.62rem;
+}
+.aboutUsSection1 > h2 {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.50625rem;
+}
+.aboutUsSection1 > p {
+  width: 42.6875rem;
+
+  color: #000;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 1.8125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.0725rem;
+
+  margin-top: 1.69rem;
+  margin-bottom: 3.19rem;
+}
+.aboutUsSection1 > button {
+  width: 15.5625rem;
+  height: 4.0625rem;
+  flex-shrink: 0;
+
+  border-radius: 1.125rem;
+  background: #072049;
+
+  /* width: 11.5rem; */
+
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.175rem;
+}
+
+/************** section 2 *****************/
+
+.aboutUsSection2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 13.81rem;
+}
+.aboutUsSection2 > p {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+
+  margin-bottom: 3.16rem;
+}
+#box1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+#box1 > div {
+  width: 8.875rem;
+  height: 4.50438rem;
+  flex-shrink: 0;
+
+  border-radius: 0.89194rem;
+  background: #bdbdbd;
+  box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.42);
+}
+/************** section 3 *****************/
+.aboutUsSection3 {
+  width: 56.125rem;
+
+  color: #000;
+  font-family: "Poppins";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.06rem;
+  text-transform: capitalize;
+
+  margin-top: 16.5rem;
+  margin-left: 5.19rem;
+}
+
+/************** section 4 *****************/
+.aboutUsSection4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin-top: 28.5rem;
+  gap: 6.19rem;
+}
+
+.aboutUsSection4 > #card1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90vw;
+}
+
+#aboutUsSection4Card1_d1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: start;
+}
+#aboutUsSection4Card1_p1 {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.04rem;
+  text-transform: capitalize;
+
+  margin-bottom: 1.88rem;
+}
+#aboutUsSection4Card1_p2 {
+  width: 21.875rem;
+  height: 4.57606rem;
+  flex-shrink: 0;
+
+  color: #000;
+  font-family: "Poppins";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+#aboutUsSection4Card1_d2 {
+  width: 36.25rem;
+  height: 20.25rem;
+  flex-shrink: 0;
+
+  border-radius: 1.25rem;
+  background: #808080;
+  box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.25);
+}
+#aboutUsSection4Card1_d2 > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.aboutUsSection4 > #card1 > img {
+  /* object-fit: cover; */
+  /* width: 100%;
+  height: 100%; */
+
+  margin-left: 4.12rem;
+}
+
+/************** section 5 *****************/
+.aboutUsSection5 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 17.75rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 7.69rem;
+}
+.aboutUsSection5 > p {
+  width: 34.375rem;
+  height: 4.66569rem;
+  flex-shrink: 0;
+
+  color: #000;
+  font-family: "Poppins";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+#aboutUsSection5Box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 4.75rem;
+  /* margin-top: 5.15rem; */
+}
+#aboutUsSection5d1 {
+  width: 24.625rem;
+  height: 27.0625rem;
+  flex-shrink: 0;
+  justify-content: space-around;
+  border-radius: 1.125rem;
+  background: #f3fde8;
+  margin-top: 7.4rem;
+  /* margin-left: 4rem; */
+}
+#aboutUsSection5d2 {
+  width: 24.625rem;
+  height: 27.0625rem;
+  flex-shrink: 0;
+
+  border-radius: 1.125rem;
+  background: #dfccfb;
+
+  margin-top: 12.52rem;
+}
+#aboutUsSection5d3 {
+  width: 24.625rem;
+  height: 27.0625rem;
+  flex-shrink: 0;
+
+  justify-content: space-around;
+
+  border-radius: 1.125rem;
+  background: #fff3da;
+  /* margin: 5.15rem; */
+}
+
+/******************* Find Job.html  *********************/
+/******************** Section 1 *******************/
+/****************** leftSection  *******************/
+.findJobSection1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5.62rem;
+
+  gap: 12.31rem;
+}
+#findJobSection1_LeftSec {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+#findJobSection1_LeftSec > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  /* margin-bottom: 1.5rem; */
+}
+#findJobSection1_LeftSecP1 {
+  /* width: 40.3125rem; */
+  width: 33.3125rem;
+
+  color: #000;
+  font-family: "Poppins";
+  font-size: 3.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.065rem;
+  text-transform: capitalize;
+}
+#findJobSection1_LeftSecP2 {
+  width: 30.6875rem;
+  /* width: 40.3125rem; */
+
+  color: #000;
+  font-family: "Poppins";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.0225rem;
+  text-transform: capitalize;
+
+  /* margin-right: 9.3rem; */
+
+  margin-top: 2.5rem;
+  margin-bottom: 4.19rem;
+}
+#findJobSection1_LeftSec > button {
+  width: 21.5625rem;
+  height: 4.6875rem;
+  flex-shrink: 0;
+
+  border-radius: 2.72331rem;
+  background: #072049;
+
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.03rem;
+  text-transform: capitalize;
+}
+/****************** rightSection  *******************/
+
+#findJobSection1_RightSec {
+}
+#findJobSection1_RightSec > img {
+}
+
+/****************** Section 2 *******************/
+
+/****************** Section 3 *******************/
+
+.findJobSection3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+
+  max-width: 85vw;
+}
+#findJobSection3p1 {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+#findJobSection3Box1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  gap: 3.06rem;
+
+  margin-top: 8.19rem;
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
+}
+#findJobSection3d1 {
+  width: 23.8125rem;
+  height: 15.25rem;
+  flex-shrink: 0;
+
+  border-radius: 1.125rem;
+  border: 1px solid #9c9c9c;
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+
+  box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.42);
+
+  padding-left: 0.88rem;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+#findJobSection3d1 > img {
+}
+#findJobSection3d1p1 {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 1.63rem;
+  margin-bottom: 1.63rem;
+}
+#findJobSection3d1p2 {
+  color: #777;
+  font-family: "Poppins";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/****************** Section 4 *******************/
+.findJobSection4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20.25rem;
+  margin-bottom: 1.63rem;
+
+  max-width: 85vw;
+}
+
+#findJobSection4_LeftSec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+#findJobSection4_leftSecP1 {
+  width: 13.8125rem;
+
+  color: #072049;
+  font-family: "Poppins";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+#findJobSection4_leftSecP2 {
+  width: 42.3125rem;
+
+  color: #000;
+  font-family: "Poppins";
+  font-size: 3.4375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.06875rem;
+}
+
+#findJobSection4_leftSecP3 {
+  width: 27.4375rem;
+  height: 4.5625rem;
+  flex-shrink: 0;
+
+  color: #000;
+  font-family: "Poppins";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+
+  margin-top: 1.25rem;
+  margin-bottom: 3.5rem;
+}
+
+#findJobSection4_leftSecBoxD {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+
+  margin-bottom: 2.38rem;
+}
+#findJobSection4_leftSecBoxD > img {
+  margin-right: 0.5rem;
+
+  /* margin-bottom: 2rem; */
+}
+#findJobSection4_leftSecBoxD > p {
+  width: 33.8125rem;
+
+  color: #000;
+  font-family: "Poppins";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
