@@ -19,8 +19,10 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  /* flex-wrap: wrap; */
   height: 0ch;
-  width: 100%;
+  /* width: 100%; */
+  width: 88vw;
 
   /* justify-content: center; */
   align-items: center;
@@ -102,6 +104,12 @@ body {
   }
 }
 /******************** index.html **********************/
+
+.container2 {
+  /* display: flex; */
+  /* flex-direction: row; */
+ 
+}
 /* Styling for section 1 */
 .section1 {
   display: flex;
@@ -131,10 +139,14 @@ body {
 /* Styling for the section 1 h1 element */
 .section1H1 {
   color: #000;
-  font-family: Poppins;
+  font-family: "Poppins";
+
   font-size: 2.8125rem;
   font-weight: 700;
   letter-spacing: 0.50625rem;
+
+  margin-left: 0rem;
+  padding-left: 0rem;
 }
 
 /* kjasbdfkjb */
@@ -215,7 +227,7 @@ body {
   margin-bottom: 6rem;
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 1540px) {
   .section1 {
     display: flex;
     flex-direction: column-reverse;
@@ -227,14 +239,14 @@ body {
   #rightSectionImg {
     flex-wrap: wrap;
     flex-direction: column-reverse;
-    width: 30.375rem;
-    height: 30.375rem;
+    width: 25.375rem;
+    height: 25.375rem;
     flex-shrink: 0;
     /* margin-bottom: 6rem; */
     margin-left: 2rem;
   }
   .section1 > #leftSection {
-    margin-left: 5.25rem;
+    /* margin-left: 5.25rem; */
     color: #000;
     font-family: "Poppins";
     font-size: 1.8125rem;
@@ -252,11 +264,56 @@ body {
     justify-content: center;
     align-items: center;
   }
+  #leftSection > button {
+    margin-left: 0rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  .section1 {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+  }
+  #rightSectionImg {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    width: 30.375rem;
+    height: 30.375rem;
+    flex-shrink: 0;
+    /* margin-bottom: 6rem; */
+    margin-left: 0rem;
+  }
+  .section1 > #leftSection {
+    margin-left: 1.25rem;
+    margin-left: 0rem;
+    color: #000;
+    font-family: "Poppins";
+    font-size: 1.8125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.0725rem;
+
+    /* width: 42.6875rem; */
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #leftSection > button {
+    margin-left: 0rem;
+  }
 }
 
 /* Styling for Section 2 */
 /********************** section 2 *******************/
-
+/********************** Section 2_1 ********************/
 /* Set Section 2 to display as a flex row, 100% of the viewport width */
 .section2 {
   display: flex;
@@ -424,15 +481,19 @@ body {
     flex-wrap: wrap;
   }
 }
+
+/********************** Section 2_3 ********************/
 .section2_3 {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 6.2rem;
   align-items: center;
   margin-top: 5.65rem;
   margin-left: 5.75rem;
   margin-right: 5.75rem;
+  max-width: 88vw;
 }
 #section2_3_card {
   width: 21.75rem;
@@ -468,9 +529,11 @@ body {
   text-transform: capitalize;
 }
 
+/********************** Section 2_5 ********************/
 .section2_5 {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 6.2rem;
   align-items: center;
@@ -522,9 +585,11 @@ body {
   line-height: normal;
   text-decoration-line: "strikethrough";
 }
+
 #planeCard > span {
   display: flex;
   flex-direction: row;
+
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -602,6 +667,20 @@ body {
 #discount2 {
   margin-top: -1.87rem;
   margin-left: 13.87rem;
+}
+
+@media screen and (max-width: 864px) {
+  .section2_5 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.2rem;
+    max-width: 86vw;
+
+    /* margin-left: 5.75rem;
+    margin-right: 5.75rem; */
+  }
 }
 
 /***************** section 3 ******************/
@@ -712,6 +791,10 @@ body {
 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 88vw;
 
   margin: 3.95rem 4vw 4.81rem 4vw;
 }
@@ -758,7 +841,16 @@ body {
 
   margin-bottom: 5.44rem;
 }
-
+@media screen and (max-width: 1460px) {
+  #section4_right {
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 1340px) {
+  #section4_right {
+    margin-left: 0rem;
+  }
+}
 /********************** footer  *****************************/
 
 .footer {
@@ -773,12 +865,14 @@ body {
 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 16.88rem;
+
   padding-left: 5.25rem;
   padding-right: 3.81rem;
   padding-top: 5.19rem;
   padding-bottom: 1.5rem;
+  gap: 16.88rem;
 }
 #company {
   display: flex;
@@ -830,7 +924,7 @@ body {
 #usefulLinks {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   /* gap: 0.7rem; */
   /* justify-content: center; */
 
@@ -846,7 +940,7 @@ body {
   text-transform: capitalize;
   margin-bottom: 0.81rem;
 }
-#usefulLinks > p {
+#usefulLinks > a {
   /* width: 3.3125rem; */
 
   color: #fff;
@@ -857,7 +951,8 @@ body {
   line-height: normal;
   text-transform: capitalize;
 
-  margin-bottom: 0.7rem;
+  /* margin-bottom: 0.81rem; */
+  margin-bottom: 0.81rem;
 }
 
 #contact {
@@ -938,6 +1033,40 @@ body {
 
 #emailInput > img {
   object-fit: cover;
+}
+
+@media screen and (max-width: 1320px) {
+  .footer {
+    gap: 0rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .footer {
+    max-width: 86vw;
+  }
+}
+@media screen and (max-width: 940px) {
+  .footer {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: auto auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  #emailInput {
+    max-width: 12.56rem;
+  }
+  #emailInput > input {
+    margin-right: 1rem;
+    width: 8rem;
+  }
+  .footer {
+    padding-left: 2.25rem;
+    padding-right: 1.81rem;
+    padding-top: 5.19rem;
+    padding-bottom: 1.5rem;
+  }
 }
 
 /******************** Contact.html  *****************/
