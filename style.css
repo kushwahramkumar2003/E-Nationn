@@ -225,17 +225,12 @@ body {
 .circles {
   /* display: flex; */
 
-  position: relative;
+  position: absolute;
   /* float: right; */
-  /* margin-left: 41%;
+  margin-left: 41%;
   width: 737px;
   height: 476px;
-  margin-top: -15%; */
-
-  margin-left: 28%;
-  width: 737px;
-  height: 476px;
-  margin-top: -50%;
+  margin-top: -15%;
 }
 #circle1 {
 }
