@@ -97,7 +97,8 @@ body {
 }
 
 /* Styling for the h1 element within the navbar */
-#navBar > h1 {
+#navBar > h1,
+.top-nav > div > h1 {
   color: #072049;
   font-family: Eczar;
   font-size: 2.1875rem;
@@ -228,24 +229,33 @@ body {
   position: absolute;
   /* float: right; */
   margin-left: 41%;
-  width: 737px;
-  height: 476px;
+  width: 46.063rem;
+  height: 29.75rem;
   margin-top: -15%;
+  flex-wrap: wrap;
 }
 #circle1 {
 }
 #circle2 {
+  margin-top: 25rem;
+  margin-left: -3rem;
+  position: relative;
 }
 #circle3 {
+  margin-top: -19rem;
+  margin-left: 48rem;
 }
 #circle4 {
-  margin-right: 13.6rem;
+  margin-left: 20.6rem;
+  margin-top: -15rem;
 }
 #circle5 {
-  margin-top: 2.88rem;
-  position: absolute;
+  margin-top: 3.88rem;
+  margin-left: 4rem;
 }
 #circle6 {
+  margin-left: 51rem;
+  margin-top: -10rem;
 }
 
 .section1 > #leftSection {
@@ -860,7 +870,7 @@ body {
   /* margin-left: 5.75rem;
   margin-right: 5.75rem; */
   /* overflow-y: hidden; */
-  width: 80%;
+  width: 100%;
 }
 #planeCard {
   width: 23.6875rem;
@@ -3201,5 +3211,129 @@ body {
   }
   #findJobSection4_leftSecBoxD {
     margin-bottom: 1.1rem;
+  }
+}
+
+/****************** new navbar  ****************/
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #00baf0; */
+  /* background: linear-gradient(to left, #f46b45, #eea849); */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  height: 50px;
+  padding: 1em;
+  width: 90%;
+  margin-top: 1rem;
+  z-index: +1;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+  color: #000;
+  position: relative;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #000000;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
   }
 }
